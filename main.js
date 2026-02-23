@@ -28,8 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Since we know the colors from the user request, we can set them staticly for charts
     // text: #eae9eb, background: #121114, primary: #6c46b2, secondary: #544a65, accent: #7d6d9a
     const colorText = '#eae9eb';
+    const colorBackground = '#121114';
     const colorPrimary = '#6c46b2';
+    const colorSecondary = '#544a65';
     const colorAccent = '#7d6d9a';
+
+    Chart.defaults.font.family = "'Outfit', 'Inter', 'Helvetica', sans-serif";
 
     // Common chart options for dark theme
     const commonOptions = {
@@ -65,11 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 label: 'Avg Distance Travelled (km)',
                 data: [15, 28, 45, 42, 20],
                 backgroundColor: [
-                    'rgba(248, 113, 113, 0.6)', // red
-                    'rgba(125, 109, 154, 0.6)', // accent
-                    'rgba(74, 222, 128, 0.8)',  // green (optimal)
-                    'rgba(74, 222, 128, 0.8)',  // green (optimal)
-                    'rgba(108, 70, 178, 0.6)'   // primary
+                    colorSecondary, // < 6
+                    colorAccent,    // 6 - 7
+                    colorPrimary,   // 7 - 8
+                    colorPrimary,   // 8 - 9
+                    colorSecondary  // > 9
                 ],
                 borderColor: 'rgba(234, 233, 235, 0.2)',
                 borderWidth: 1,
@@ -131,14 +135,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         label: 'Emotional Stability',
                         data: [40, 70, 95, 90, 65],
-                        borderColor: '#4ade80', // green
+                        borderColor: colorPrimary,
+                        backgroundColor: colorPrimary,
                         tension: 0.4,
                         borderWidth: 3
                     },
                     {
                         label: 'Avg Caffeine (Cups)',
                         data: [3.5, 2.5, 1.2, 1.5, 2.0],
-                        borderColor: '#f87171', // red
+                        borderColor: colorAccent,
+                        backgroundColor: colorAccent,
                         borderDash: [5, 5],
                         tension: 0.4,
                         borderWidth: 2,
@@ -180,9 +186,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     label: 'Relative Mortality Risk',
                     data: [1.12, 1.00, 1.30],
                     backgroundColor: [
-                        'rgba(248, 113, 113, 0.8)', // Red (+12%)
-                        'rgba(74, 222, 128, 0.8)',  // Green (Baseline)
-                        'rgba(125, 109, 154, 0.8)'  // Accent (+30%)
+                        colorSecondary, // < 6
+                        colorPrimary,  // Baseline
+                        colorAccent    // > 9
                     ],
                     borderColor: 'rgba(234, 233, 235, 0.2)',
                     borderWidth: 1,
