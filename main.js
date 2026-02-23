@@ -55,33 +55,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Physical Chart (Distance Travelled vs Sleep)
     const ctxPhysical = document.getElementById('physicalChart');
-    if (ctxPhysical) {
-        new Chart(ctxPhysical, {
-            type: 'bar',
-            data: {
-                labels: ['< 6 hrs', '6 - 7 hrs', '7 - 8 hrs', '8 - 9 hrs', '> 9 hrs'],
-                datasets: [{
-                    label: 'Avg Distance Travelled (km)',
-                    data: [15, 28, 45, 42, 20],
-                    backgroundColor: [
-                        'rgba(248, 113, 113, 0.6)', // red
-                        'rgba(125, 109, 154, 0.6)', // accent
-                        'rgba(74, 222, 128, 0.8)',  // green (optimal)
-                        'rgba(74, 222, 128, 0.8)',  // green (optimal)
-                        'rgba(108, 70, 178, 0.6)'   // primary
-                    ],
-                    borderColor: 'rgba(234, 233, 235, 0.2)',
-                    borderWidth: 1,
-                    borderRadius: 6
-                }]
-            },
-            options: {
-                ...commonOptions,
-                scales: {
-                    y: { beginAtZero: true, ...commonOptions.scales.y }
-                }
+    const ctxPhysicalExample = document.getElementById('physicalChartExample');
+
+    const physicalChartData = {
+        type: 'bar',
+        data: {
+            labels: ['< 6 hrs', '6 - 7 hrs', '7 - 8 hrs', '8 - 9 hrs', '> 9 hrs'],
+            datasets: [{
+                label: 'Avg Distance Travelled (km)',
+                data: [15, 28, 45, 42, 20],
+                backgroundColor: [
+                    'rgba(248, 113, 113, 0.6)', // red
+                    'rgba(125, 109, 154, 0.6)', // accent
+                    'rgba(74, 222, 128, 0.8)',  // green (optimal)
+                    'rgba(74, 222, 128, 0.8)',  // green (optimal)
+                    'rgba(108, 70, 178, 0.6)'   // primary
+                ],
+                borderColor: 'rgba(234, 233, 235, 0.2)',
+                borderWidth: 1,
+                borderRadius: 6
+            }]
+        },
+        options: {
+            ...commonOptions,
+            scales: {
+                y: { beginAtZero: true, ...commonOptions.scales.y }
             }
-        });
+        }
+    };
+
+    if (ctxPhysical) {
+        new Chart(ctxPhysical, physicalChartData);
+    }
+
+    if (ctxPhysicalExample) {
+        new Chart(ctxPhysicalExample, physicalChartData);
     }
 
     // 2. Academic Chart (Inverse U-Shape Productivity)

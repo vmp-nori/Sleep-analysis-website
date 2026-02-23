@@ -14,6 +14,7 @@ export default defineConfig({
         academic: './academic.html',
         mental: './mental.html',
         mortality: './mortality.html',
+        about: './about.html',
       }
     }
   }
