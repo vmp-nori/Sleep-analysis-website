@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.DS_Store
+pdf1.txt
+pdf2.txt
+extracted_data.txt
+extract.py
