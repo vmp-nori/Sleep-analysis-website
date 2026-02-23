@@ -1,0 +1,108 @@
+D A T A  A N A L Y S I S  &  
+W E B S I T E  D E S I G N
+By Tayyab, Norin and Adi
+S1 AT1 - 
+Part 2 Analysis of Data & Website DesignWebsite MockupWebsite MockupWebsite MockupWebsite MockupWebsite MockupWebsite MockupWebsite MockupWebsite MockupWebsite Mockup
+You can view the mockup as a website design here:
+https://www.canva.com/design/DAHBicqhwYk/8cwT23zOW9Go0N86efewiw/edit?
+utm_content=DAHBicqhwYk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttonComposition & Layout
+In our website, the header and sidebar stay there as you scroll down the website. That was
+decided so it would always be easy for the audience to have access to the side menu instead
+of scrolling back and forth.
+Majority of the body texts are on a round-cornered rectangle. That’s because it makes it
+easier to differentiate different sections of text and paragraphs. So we might change the
+colour of each rectangle to help the viewer easily tell apart the paragraphs for each section
+or have some text or no text box and some text staright on top of the background.
+We aim to include graphs that are bigger in size than the text pieces themselves to easily
+convey the information and visually attract the reader. They will also be interactive to
+further attract the reader’s attention. So the text besides graphs will always be minimal, just
+a couple dotpoints.
+We have also included the purple button at the bottom of some pages to help the reader
+navigate throught the website.Colouring
+Black is the background colour for our whole website. We
+chose this because if you were to think of a colour to
+represent sleep, it would be black because sleeps happen
+usually in the dark. So it fits the theme of our website.
+W h i t e  i s  u s e d  a s  t h e  c o l o u r  f o r  a l l  t h e  t e x t .  W e  c h o s e  w h i t e  b e c a u s e  o u r  w e b s i t e ’ s
+b a c k g r o u n d  i s  b l a c k  s o  w h i t e  c o n t r a s t s  w e l l  a n d  w i l l  b e  e a s y  f o r  t h e  a u d i e n c e  t o  r e a d .
+I t  a l s o  c o n t r a s t s  w e l l  o f  o u r  o t h e r  t e x t  b o x  c o l o u r s  o f  2  b l u e s  a n d  p u r p l e  m a k i n g  i t
+e a s i e r  f o r  t h e  a u d i e n c e  t o  r e a d .
+This colour of blue makes an appearance in our website as the header and sidebar.
+This blue is a very light colour so it  helps contrast against the black background.
+This blue colour variation appears in our website as a text box for text/titles as well
+as graphs. This  colour is a good contrast against the white text and also creates a
+consistent theme with the other blue colour used.
+This purple colour in our website mainly appears as the colour for the buttons that
+helps users navigate through the website page. 
+This colour was chosen because purple is good contrast among the other blue
+colours that are on the website,
+These 3
+colours were
+chosen
+because when
+you think of
+sleep, you
+associate it
+with a sense
+of calmness. 
+Which led to
+the decision
+of choosing
+these pastel
+like colours to
+give the same
+feeling while
+not being
+bland or dullTypography
+F o n t  # 1
+Font #2
+This font is called “Agandir” 
+It will be the feature on our website
+as the main font for body text. 
+This text has a simple aesthetic and is
+easy to read which is a reason why we
+used it. We want to prioritise the
+audience’s needs. We want a simple font
+because as mentioned in the colours we
+want a simple website aesthetic so this
+font was perfect.
+This font is called “Calistoga” 
+It will beused as the heading font in our website. 
+This font is a bit more cursive but still acts as a good
+heading font since it’s still simple and a common style
+font but easy to diffrentiate from the body text font.Based on JMSS sleep data, we can see that students' daily energy scores follow an inverse-U
+distribution, with the most optimal levels of sleep falling between 6 and 9 hours, with the most
+optimal being at 8 hours,  and the least reported energy scores belonging to those with less than 6
+hours of sleep. This is could be because sleep loss impairs your brain's emotional regulation, leading it
+to react excessively to negative stimuli. The same can be said for excess amounts of sleep (more than
+9 hours), where lethargy takes over and you wake up groggy and sluggish.This graph analyses the physical health based on the average amount of physical activity per week in
+the form of km travelled per week. 
+We can see here that the most optimal amount of sleep for physical activity is 7-8 hours, with
+anything more or anything less leading to a decrease in physical acitivity. KM travelled droped by
+more than half in most cases of little or excess sleep. This could be due to the lack of energy recieved
+from little sleep, or lack of time to travel with excess sleep.This graph analyses the emotional stability of subjects with different hours of sleep. Again the most
+most optimal range for emotional stability is 7-9 hours with the most optimal being around the 8 hour
+mark. 
+With proper sleep, your brains are able to properly process your memories and properly handle
+stress, allowing you to work and focus a lot better than with little sleep.Unsurprisingly, individuals who got little sleep reported to have a much higher caffeine consumption
+than people with good-quality sleep. If we link caffeine consumption to tiredness, we can see that the
+least tired people got 7-9 hours of sleep and consumed less than 2 cups of coffee per day. 
+The people who got the least sleep also increased their caffeine intake, averaging 1.5 cups per day.
+This could be due to the caffeine that they consumed keeping them awake for longer, which leads to a
+higher amount of sleep to compensate. Studies also show that sleep is strongly correlated to all cause mortality, with lack of sleep and
+excess sleep increasing your risk of all cause mortality by roughly ~50% than if you had a normal
+sleep. 
+The graph shows a strong U-shaped distribution, with 7-8 hours being ideal for not increasing your
+chances of death. Sleeping <6 hours increases strain on your cardiovascular, metabolic, and immune
+systems, decreasing their effectiveness at a detriment to your health. Furthermore, those with
+greater than 9 hours of sleep are likely to suffer from fragmented sleep, which strongly decreases
+their sleep quality, causing a higher amount of bad quality sleep, which leads back to the same issues
+of lack of sleep does.
+Academic performance was also analysed, with average productivity scores asked from students
+with differing amount of sleep. We see an inverse-U shaped distribution, strongly linking better
+productivity to 7-9 hours of sleep. Productivity decreases on either side of the graph, especially
+having less than 6 hours of sleep. Signalling that the lack of sleep and rest significantly impacts the
+brains ability to focus. We see the graph drop off after 9 hours as well, possibly due to having higher
+amounts of sleep leading to students being late to classes, or not having enough time to study,This summary table shows that less than 6 hours of sleep is linked to higher stress, poorer sleep
+quality, a higher heart rate, higher obesity rates, and lower productivity. The 6-9 hour range is by far
+the best range across mental, physical, and mortality health & productivity.

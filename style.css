@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Calistoga", "Georgia", serif;
+  --font-body: "Outfit", "Inter", "Helvetica", sans-serif;
+
+  --color-blue-header: #1e3a5f; /* Example dark slate blue */
+  --color-blue-pastel: #7aa2e3; /* Light pastel blue for highlights */
+  --color-blue-card: #2c4c77;   /* Secondary blue for cards */
+  --color-purple-pastel: #a27ae3; /* Pastel purple for buttons */
+  --color-purple-dark: #815ac0;   /* Darker purple for hover */
+}
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
