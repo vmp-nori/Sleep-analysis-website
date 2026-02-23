@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Effects of Sleep Duration</title>
+  <!-- We will use Google Fonts for headings and body texts as specified in the PDF -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Outfit:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-black text-white font-body selection:bg-purple-pastel selection:text-white overflow-x-hidden">
+  <!-- Navbar for Mobile -->
+  <header
+    class="md:hidden sticky top-0 bg-blue-header border-b border-blue-pastel/20 z-50 p-4 flex justify-between items-center">
+    <h1 class="text-xl font-heading">Sleep & Life</h1>
+    <button id="mobile-menu-btn" class="text-white hover:text-purple-pastel transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 6h18M3 18h18" />
+      </svg>
+    </button>
+  </header>
+
+  <div id="app" class="flex min-h-screen relative">
+    <!-- Sidebar (Hidden on mobile by default) -->
+    <aside id="sidebar"
+      class="w-64 fixed h-full bg-blue-header border-r border-blue-pastel/20 flex flex-col pt-8 z-50 transition-transform -translate-x-full md:translate-x-0">
+      <div class="md:hidden absolute top-4 right-4">
+        <button id="close-menu-btn" class="text-white/80 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <h1 class="text-3xl font-heading text-center mb-10 px-4">Sleep & Life</h1>
+      <nav class="flex-1 flex flex-col gap-2 px-4">
+        <a href="#hero"
+          class="nav-link text-white/80 hover:text-white hover:bg-white/10 px-4 py-3 rounded-xl transition-all font-medium">Overview</a>
+        <a href="#physical"
+          class="nav-link text-white/80 hover:text-white hover:bg-white/10 px-4 py-3 rounded-xl transition-all font-medium">Physical
+          Health</a>
+        <a href="#academic"
+          class="nav-link text-white/80 hover:text-white hover:bg-white/10 px-4 py-3 rounded-xl transition-all font-medium">Academic
+          Performance</a>
+        <a href="#mental"
+          class="nav-link text-white/80 hover:text-white hover:bg-white/10 px-4 py-3 rounded-xl transition-all font-medium">Mental
+          Health</a>
+        <a href="#mortality"
+          class="nav-link text-white/80 hover:text-white hover:bg-white/10 px-4 py-3 rounded-xl transition-all font-medium">Mortality
+          Rates</a>
+      </nav>
+      <div class="p-6 text-sm text-white/40 text-center">
+        JMSS Data Analysis<br>By Tayyab, Norin & Adi
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="md:ml-64 flex-1 flex flex-col w-full">
+      <!-- Scrollable Sections -->
+      <div class="container max-w-6xl mx-auto px-6 md:px-12 flex flex-col gap-24 pb-24 w-full">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[80vh] flex flex-col justify-center items-start pt-10 scroll-mt-24">
+          <div
+            class="inline-block px-4 py-1.5 rounded-full bg-blue-pastel/10 border border-blue-pastel/30 text-blue-pastel font-medium text-sm mb-6">
+            Empirical JMSS Study
+          </div>
+          <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl leading-none mb-6 text-white tracking-wide">
+            How Does Sleep <br />
+            <span class="text-blue-pastel">Affect Your</span> <span class="text-purple-pastel">Life?</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-blue-50/70 max-w-3xl mb-12 font-light leading-relaxed">
+            Based on empirical studies and survey data from JMSS students, we analyze how different sleep durations
+            (&lt;6 hrs, 6-9 hrs, and &gt;9 hrs) impact physical performance, productivity, emotional stability, and
+            long-term health.
+          </p>
+          <div class="flex gap-4">
+            <a href="#physical"
+              class="px-8 py-4 bg-purple-pastel hover:bg-purple-dark text-white font-medium rounded-full transition-all shadow-lg hover:shadow-purple-pastel/30 hover:-translate-y-1">
+              Explore The Data
+            </a>
+          </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-blue-pastel/20 to-transparent"></div>
+
+        <!-- Physical Health -->
+        <section id="physical" class="scroll-mt-24">
+          <h2 class="font-heading text-4xl md:text-5xl mb-4">Physical Health & Athletics</h2>
+          <p class="text-xl text-blue-50/70 mb-10 max-w-3xl font-light">Distance traveled mapping against sleep duration
+            reveals a clear peak in physical performance.</p>
+
+          <div
+            class="bg-blue-card p-6 md:p-10 rounded-[2rem] border border-white/5 grid lg:grid-cols-2 gap-12 items-center hover:border-white/10 transition-colors shadow-2xl relative overflow-hidden">
+            <!-- Decorative blob -->
+            <div
+              class="absolute -top-24 -right-24 w-64 h-64 bg-blue-pastel/10 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div class="relative z-10">
+              <p class="text-lg leading-relaxed mb-6 text-blue-50/90 font-light">
+                <strong class="text-white block mb-3 text-2xl font-heading tracking-wide">The 7-9 Hour Sweet
+                  Spot</strong>
+                Even with 7 hours of sleep, poor sleep quality can reduce overall rest and lower physical performance.
+                Sleep duration strongly affects physical capabilities:
+              </p>
+              <div class="space-y-4 my-8">
+                <div class="bg-black/20 p-4 rounded-xl border border-white/5">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                    <strong class="text-white">&lt; 6 Hours</strong>
+                  </div>
+                  <p class="text-blue-50/70 text-sm">Reduces stamina, poor muscle repair, and significantly increases
+                    injury risk. Distance travelled dropped by over half.</p>
+                </div>
+                <div class="bg-black/20 p-4 rounded-xl border border-white/5 border-l-4 border-l-green-400">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                    <strong class="text-white">7-9 Hours</strong>
+                  </div>
+                  <p class="text-blue-50/70 text-sm">Supports optimal muscle repair and recovery, establishing the peak
+                    range for high athletic output and activity volume.</p>
+                </div>
+                <div class="bg-black/20 p-4 rounded-xl border border-white/5">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="w-3 h-3 rounded-full bg-blue-400"></span>
+                    <strong class="text-white">&gt; 9 Hours</strong>
+                  </div>
+                  <p class="text-blue-50/70 text-sm">May temporarily improve reaction time, but excess sleep is linked
+                    with steep declines in total physical activity due to lethargy or lack of time.</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative z-10 w-full aspect-square md:aspect-auto md:h-96 bg-black/40 rounded-2xl p-6 flex flex-col items-center justify-center border border-white/5 shadow-inner">
+              <h3 class="text-white/80 font-medium mb-4 self-start">Physical Activity vs Sleep</h3>
+              <canvas id="physicalChart" class="w-full max-h-full"></canvas>
+            </div>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <a href="#academic"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-purple-pastel/20 hover:bg-purple-pastel text-purple-200 hover:text-white rounded-full transition-colors text-sm font-medium">
+              Next: Academic Performance
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- Academic Performance -->
+        <section id="academic" class="scroll-mt-24">
+          <h2 class="font-heading text-4xl md:text-5xl mb-4">Academic Performance</h2>
+          <p class="text-xl text-blue-50/70 mb-10 max-w-3xl font-light">Productivity strictly follows an inverse
+            U-shaped pattern, peaking at 8 hours of sleep.</p>
+
+          <div
+            class="bg-blue-card p-6 md:p-10 rounded-[2rem] border border-white/5 grid lg:grid-cols-2 gap-12 items-center hover:border-white/10 transition-colors shadow-2xl relative overflow-hidden">
+            <div
+              class="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-pastel/10 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div
+              class="order-2 lg:order-1 relative z-10 w-full aspect-square md:aspect-auto md:h-96 bg-black/40 rounded-2xl p-6 flex flex-col items-center justify-center border border-white/5 shadow-inner">
+              <h3 class="text-white/80 font-medium mb-4 self-start">Productivity Score vs Sleep</h3>
+              <canvas id="academicChart" class="w-full max-h-full"></canvas>
+            </div>
+
+            <div class="order-1 lg:order-2 relative z-10">
+              <h3 class="font-heading text-2xl text-white mb-4 tracking-wide">The Impact on Brain Function</h3>
+              <p class="text-blue-50/90 font-light mb-6 leading-relaxed">
+                Based on massive datasets (54,102 students) and JMSS survey productivity scores, cognitive functions
+                such as memory consolidation, problem-solving, and sustained focus peak significantly at the 7-9 hour
+                range.
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-black/20 p-5 rounded-2xl border border-white/5">
+                  <div class="text-3xl font-heading text-blue-pastel mb-2">~25%</div>
+                  <p class="text-sm text-blue-50/80">Of students average 7 hours or less on school days.</p>
+                </div>
+                <div class="bg-black/20 p-5 rounded-2xl border border-white/5">
+                  <div class="text-3xl font-heading text-purple-pastel mb-2">Drop-offs</div>
+                  <p class="text-sm text-blue-50/80">Both insufficient (&lt;6h) and excessive (&gt;9h) sleep reduce
+                    productivity.</p>
+                </div>
+              </div>
+              <p class="text-blue-50/90 font-light mt-6 leading-relaxed">
+                The drop-off after 9 hours is potentially due to oversleeping causing students to be late or groggy,
+                missing crucial study periods.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <a href="#mental"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-purple-pastel/20 hover:bg-purple-pastel text-purple-200 hover:text-white rounded-full transition-colors text-sm font-medium">
+              Next: Mental Health
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- Mental Health & Stress -->
+        <section id="mental" class="scroll-mt-24">
+          <h2 class="font-heading text-4xl md:text-5xl mb-4">Mental Health & Stress</h2>
+          <p class="text-xl text-blue-50/70 mb-10 max-w-3xl font-light">Emotional resilience is heavily dependent on
+            allowing the brain to recover optimally.</p>
+
+          <div
+            class="bg-blue-card p-6 md:p-10 rounded-[2rem] border border-white/5 grid lg:grid-cols-2 gap-12 items-center hover:border-white/10 transition-colors shadow-2xl relative overflow-hidden">
+            <div
+              class="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-blue-pastel/5 to-transparent pointer-events-none">
+            </div>
+
+            <div class="relative z-10">
+              <h3 class="font-heading text-2xl text-white mb-4 tracking-wide">Emotional Stability Curve</h3>
+              <p class="text-blue-50/90 font-light mb-6 leading-relaxed">
+                Emotional stability follows the same optimal range (7-9 hours). With proper sleep, the brain
+                successfully processes memories and handles stress.
+              </p>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-white font-medium mb-1">Sleep Loss (&lt;6h)</h4>
+                  <p class="text-blue-50/70 text-sm font-light">Impairs emotional regulation, leading to excessive
+                    reactions to negative stimuli and heightened daily stress.</p>
+                </div>
+                <hr class="border-white/5">
+                <div>
+                  <h4 class="text-white font-medium mb-1">Excess Sleep (&gt;9h)</h4>
+                  <p class="text-blue-50/70 text-sm font-light">Lethargy takes over, resulting in groggy awakenings and
+                    sluggish mental states that compound feelings of depression.</p>
+                </div>
+                <hr class="border-white/5">
+                <div>
+                  <h4 class="text-white font-medium mb-1">Caffeine Cycle</h4>
+                  <p class="text-blue-50/70 text-sm font-light">Self-medication through caffeine increases in low-sleep
+                    individuals (avg 1.5+ cups/day vs &lt;2 cups for well-rested), which feeds into a cycle of poor
+                    sleep
+                    latency.</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative z-10 w-full aspect-square md:aspect-auto md:h-96 bg-black/40 rounded-2xl p-6 flex flex-col items-center justify-center border border-white/5 shadow-inner">
+              <h3 class="text-white/80 font-medium mb-4 self-start">Emotional Stability & Caffeine</h3>
+              <canvas id="mentalChart" class="w-full max-h-full"></canvas>
+            </div>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <a href="#mortality"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-purple-pastel/20 hover:bg-purple-pastel text-purple-200 hover:text-white rounded-full transition-colors text-sm font-medium">
+              Next: Mortality Rates
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- Mortality -->
+        <section id="mortality" class="scroll-mt-24 mb-12">
+          <h2 class="font-heading text-4xl md:text-5xl mb-4">Risk of Mortality</h2>
+          <p class="text-xl text-blue-50/70 mb-10 max-w-3xl font-light">A U-shaped distribution of all-cause mortality
+            based on 1.3 million participants.</p>
+
+          <div
+            class="bg-blue-card p-6 md:p-10 rounded-[2rem] border border-white/5 hover:border-white/10 transition-colors shadow-2xl relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-center relative z-10">
+              <div
+                class="bg-black/30 p-6 rounded-2xl border border-white/5 transform hover:-translate-y-2 transition-transform">
+                <div class="text-4xl lg:text-5xl font-heading text-red-400 mb-2">1.12x</div>
+                <h4 class="text-white font-medium text-lg mb-2">&lt; 6 Hours</h4>
+                <p class="text-blue-50/70 text-sm">12% higher risk. Increases cardiovascular strain and impairs immune
+                  function.</p>
+              </div>
+              <div
+                class="bg-black/30 p-6 rounded-2xl border border-white/5 border-t-4 border-t-green-400 transform hover:-translate-y-2 transition-transform shadow-lg shadow-green-500/10">
+                <div class="text-4xl lg:text-5xl font-heading text-green-400 mb-2">1.00x</div>
+                <h4 class="text-white font-medium text-lg mb-2">7 - 8 Hours</h4>
+                <p class="text-blue-50/70 text-sm">The ideal baseline risk level for maintaining metabolic and immune
+                  equilibrium.</p>
+              </div>
+              <div
+                class="bg-black/30 p-6 rounded-2xl border border-white/5 transform hover:-translate-y-2 transition-transform">
+                <div class="text-4xl lg:text-5xl font-heading text-blue-400 mb-2">1.30x</div>
+                <h4 class="text-white font-medium text-lg mb-2">&gt; 9 Hours</h4>
+                <p class="text-blue-50/70 text-sm">30% higher risk. Often an indicator of underlying chronic health
+                  conditions.</p>
+              </div>
+            </div>
+
+            <div
+              class="relative z-10 w-full bg-black/40 rounded-2xl p-6 flex flex-col items-center justify-center border border-white/5 shadow-inner">
+              <h3 class="text-white/80 font-medium mb-4 self-start">All-Cause Mortality Relative Risk</h3>
+              <div class="w-full h-80 relative flex items-center justify-center">
+                <canvas id="mortalityChart" class="w-full h-full"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="mt-16 text-center">
+            <h3 class="font-heading text-3xl mb-4 text-white">Conclusion</h3>
+            <p class="text-blue-50/80 max-w-2xl mx-auto font-light leading-relaxed">
+              We have determined that the optimal sleep duration is strictly <strong>7-8 hours</strong>. Academic
+              performance and emotional stability peak within this range, while physical recovery peaks right around 8
+              hours. Any deviation—either sleeping too little or too much—causes detrimental effects cascading across
+              productivity, mental clarity, and long-term health.
+            </p>
+            <div class="mt-8">
+              <a href="#hero"
+                class="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-full transition-all border border-white/10">
+                Back to top
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
