@@ -6,4 +6,15 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: './', // Use relative paths for assets so Github Pages branch works anywhere
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        physical: './physical.html',
+        academic: './academic.html',
+        mental: './mental.html',
+        mortality: './mortality.html',
+      }
+    }
+  }
 })

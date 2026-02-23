@@ -1,23 +1,25 @@
 import Chart from 'chart.js/auto';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile sidebar toggle
+    // Mobile menu toggle logic
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const closeBtn = document.getElementById('close-menu-btn');
-    const sidebar = document.getElementById('sidebar');
+    const mobileMenu = document.getElementById('mobile-menu'); // Assuming 'sidebar' is now 'mobile-menu'
     const navLinks = document.querySelectorAll('.nav-link');
 
-    const toggleSidebar = () => {
-        sidebar.classList.toggle('-translate-x-full');
+    const toggleMobileMenu = () => {
+        if (mobileMenu) {
+            mobileMenu.classList.toggle('hidden');
+        }
     };
 
-    if (mobileBtn) mobileBtn.addEventListener('click', toggleSidebar);
-    if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+    if (mobileBtn) mobileBtn.addEventListener('click', toggleMobileMenu);
+    if (closeBtn) closeBtn.addEventListener('click', toggleMobileMenu);
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (window.innerWidth < 768) {
-                sidebar.classList.add('-translate-x-full');
+            if (window.innerWidth < 768 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden'); // Close menu on link click if open
             }
         });
     });

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physical Health - Effects of Sleep Duration</title>
+    <!-- We will use Google Fonts for headings and body texts as specified in the PDF -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Outfit:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-background text-text font-body selection:bg-primary selection:text-text overflow-x-hidden pt-20">
+
+    <!-- Horizontal Navbar -->
+    <nav
+        class="fixed top-0 w-full bg-black/95 backdrop-blur-sm border-b border-accent/20 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/index.html"
+                class="flex items-center gap-2 text-primary font-heading text-xl hover:text-accent transition-colors">
+                Sleep & Life
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="/index.html"
+                    class="text-text/80 hover:text-primary transition-colors text-sm font-medium">Overview</a>
+                <a href="/physical.html"
+                    class="text-primary hover:text-primary transition-colors text-sm font-medium">Physical Health</a>
+                <a href="/academic.html"
+                    class="text-text/80 hover:text-primary transition-colors text-sm font-medium">Academic
+                    Performance</a>
+                <a href="/mental.html"
+                    class="text-text/80 hover:text-primary transition-colors text-sm font-medium">Mental Health</a>
+                <a href="/mortality.html"
+                    class="text-text/80 hover:text-primary transition-colors text-sm font-medium">Mortality Rates</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-text hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-accent/20">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="/index.html"
+                    class="block px-3 py-2 text-text/80 hover:text-primary hover:bg-white/5 rounded-md">Overview</a>
+                <a href="/physical.html"
+                    class="block px-3 py-2 text-primary hover:bg-white/5 rounded-md bg-white/5">Physical Health</a>
+                <a href="/academic.html"
+                    class="block px-3 py-2 text-text/80 hover:text-primary hover:bg-white/5 rounded-md">Academic
+                    Performance</a>
+                <a href="/mental.html"
+                    class="block px-3 py-2 text-text/80 hover:text-primary hover:bg-white/5 rounded-md">Mental
+                    Health</a>
+                <a href="/mortality.html"
+                    class="block px-3 py-2 text-text/80 hover:text-primary hover:bg-white/5 rounded-md">Mortality
+                    Rates</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="app" class="flex min-h-screen relative">
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col w-full">
+            <!-- Scrollable Sections -->
+            <div class="container max-w-6xl mx-auto px-6 md:px-12 flex flex-col gap-24 pb-24 w-full pt-12">
+
+                <!-- Physical Health -->
+                <section id="physical">
+                    <div class="mb-4">
+                        <a href="/index.html"
+                            class="inline-flex text-accent hover:text-primary text-sm mb-4 items-center gap-1 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                            Back to Overview
+                        </a>
+                    </div>
+                    <h2 class="font-heading text-4xl md:text-5xl mb-4 text-primary">Physical Health & Athletics</h2>
+                    <p class="text-xl text-text/70 mb-10 max-w-3xl font-light">Distance traveled mapping against sleep
+                        duration
+                        reveals a clear peak in physical performance.</p>
+
+                    <div
+                        class="bg-secondary/40 p-6 md:p-10 rounded-[2rem] border border-text/5 grid lg:grid-cols-2 gap-12 items-center hover:border-text/10 transition-colors shadow-2xl relative overflow-hidden">
+                        <!-- Decorative blob -->
+                        <div
+                            class="absolute -top-24 -right-24 w-64 h-64 bg-accent/10 rounded-full blur-3xl pointer-events-none">
+                        </div>
+
+                        <div class="relative z-10">
+                            <p class="text-lg leading-relaxed mb-6 text-text/90 font-light">
+                                <strong class="text-text block mb-3 text-2xl font-heading tracking-wide">The 7-9 Hour
+                                    Sweet
+                                    Spot</strong>
+                                Even with 7 hours of sleep, poor sleep quality can reduce overall rest and lower
+                                physical performance.
+                                Sleep duration strongly affects physical capabilities:
+                            </p>
+                            <div class="space-y-4 my-8">
+                                <div class="bg-background/40 p-4 rounded-xl border border-text/5">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                                        <strong class="text-text">&lt; 6 Hours</strong>
+                                    </div>
+                                    <p class="text-text/70 text-sm">Reduces stamina, poor muscle repair, and
+                                        significantly increases
+                                        injury risk. Distance travelled dropped by over half.</p>
+                                </div>
+                                <div
+                                    class="bg-background/40 p-4 rounded-xl border border-text/5 border-l-4 border-l-green-400">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                                        <strong class="text-text">7-9 Hours</strong>
+                                    </div>
+                                    <p class="text-text/70 text-sm">Supports optimal muscle repair and recovery,
+                                        establishing the peak
+                                        range for high athletic output and activity volume.</p>
+                                </div>
+                                <div class="bg-background/40 p-4 rounded-xl border border-text/5">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="w-3 h-3 rounded-full bg-accent"></span>
+                                        <strong class="text-text">&gt; 9 Hours</strong>
+                                    </div>
+                                    <p class="text-text/70 text-sm">May temporarily improve reaction time, but excess
+                                        sleep is linked
+                                        with steep declines in total physical activity due to lethargy or lack of time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative z-10 w-full aspect-square md:aspect-auto md:h-96 bg-background/60 rounded-2xl p-6 flex flex-col items-center justify-center border border-text/5 shadow-inner">
+                            <h3 class="text-text/80 font-medium mb-4 self-start">Physical Activity vs Sleep</h3>
+                            <canvas id="physicalChart" class="w-full max-h-full"></canvas>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex justify-between items-center">
+                        <div></div> <!-- Spacer -->
+                        <a href="/academic.html"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-accent/20 hover:bg-accent text-text rounded-full transition-colors text-sm font-medium">
+                            Next: Academic Performance
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
